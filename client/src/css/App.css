@@ -110,7 +110,7 @@ html[data-scroll='0'] .Header-Menu-Item.ant-menu-item-selected {
 }
 
 .Footer-Container {
-  height: 150px !important;
+  height: 100px !important;
   position: relative;
   /* position: absolute; */
 }
@@ -122,6 +122,7 @@ html[data-scroll='0'] .Header-Menu-Item.ant-menu-item-selected {
   -ms-transform: translateY(-50%) !important;
   transform: translateY(-50%) !important;
   vertical-align: middle;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .Page-Heading {
