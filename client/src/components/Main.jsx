@@ -11,20 +11,9 @@ import FrontPage from './pages/FrontPage'
 import SearchPage from './pages/SearchPage'
 
 // UI Elements
-import { Layout, Affix, Button, Row, Col, BackTop, Dropdown, Menu } from 'antd'
-import {
-  MailOutlined,
-  AppstoreOutlined,
-  SettingOutlined,
-  PictureOutlined,
-  GithubOutlined,
-  YoutubeOutlined,
-  InstagramOutlined,
-  DownOutlined,
-} from '@ant-design/icons'
-import { useThemeSwitcher } from 'react-css-theme-switcher'
+import { Layout} from 'antd'
 
-const { Header, Footer, Sider, Content } = Layout
+const { Content } = Layout
 
 // Main Class
 export default class Main extends Component {
