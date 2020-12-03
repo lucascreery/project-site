@@ -10,7 +10,7 @@ import IPYNB from './Renderers/ipynb'
 
 // UI Elements
 import { Row, Col, Spin } from 'antd'
-
+import { LoadingOutlined } from '@ant-design/icons'
 
 // Main Class
 export default class PageHandler extends Component {

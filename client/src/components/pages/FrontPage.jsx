@@ -33,7 +33,7 @@ export default class FrontPage extends Component {
     let newState = { ...this.state }
     console.log('Getting page data...', this.props.files)
 
-    var res = await api.getPageInfo('Home', 'images')
+    var res = await api.getPageInfo('_Home', 'images')
     // console.log('New Page Info: ', res)
     if (res.status === 200) {
       newState.pageFiles = res.data.files
@@ -41,8 +41,8 @@ export default class FrontPage extends Component {
       console.log('Server Error')
     }
 
-    newState.photos = await newState.pageFiles.map((image) => ({
-      src: api.getPageContentBaseUrl('Home', 'images') + '/' + image.name,
+    newState.photos = await res.data.files.map((image) => ({
+      src: api.getPageContentBaseUrl('_Home', 'images') + '/' + image.name,
       ...image,
     }))
     newState.photosReady = true
