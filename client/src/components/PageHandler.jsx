@@ -93,7 +93,7 @@ export default class PageHandler extends Component {
             />
           )
         } else if (this.state.pageSubtype == 'ipynb') {
-          // this.doneLoading() // !! need to impliment correctly
+          // this.doneLoading() // !! need to implement correctly
           return (
             <IPYNB
               key={this.state.page}
@@ -134,7 +134,8 @@ export default class PageHandler extends Component {
       return (
         <h3>
           {' '}
-          somethin aint right. <br /> I received no page to render from my component properties OR the state has not been set{' '}
+          somethin aint right. <br /> I received no page to render from my component properties OR the state has not
+          been set{' '}
         </h3>
       )
     }
@@ -155,9 +156,9 @@ export default class PageHandler extends Component {
     return (
       <div>
         <this.PageTitle />
-        <Spin spinning={this.state.isLoading}>
+        <Spin spinning={this.state.isLoading} indicator={<LoadingOutlined style={{ fontSize: 24 }} />}>
           {/* {this.state.isLoading ? <Spin /> : null} */}
-          
+
           <this.PageBody />
         </Spin>
       </div>
